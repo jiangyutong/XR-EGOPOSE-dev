@@ -1,0 +1,17 @@
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+# config file
+
+dataset:
+  train: /media/zlz422/jyt/egpose/XR-EGOPOSE/data/TrainSet
+  val: /media/zlz422/jyt/egpose/XR-EGOPOSE/data/ValSet
+  test: /media/zlz422/jyt/egpose/XR-EGOPOSE/data/TestSet
+  all: /media/zlz422/jyt/egpose/XR-EGOPOSE/data/all
+transforms:
+  norm: Neck
+output_dir: /media/zlz422/jyt/egpose/XR-EGOPOSE-dev/XR-EGOPOSE-dev/output/
+data_loader:
+  batch_size: 2
+  shuffle: True
+
+eval:
+  output_file: data/eval_res.json
